@@ -17,12 +17,12 @@ export class CounterReset extends React.Component<CounterResetProps, CounterRese
         }
 
         return (
-            <div className="modal" id="modal">
+            <div className="modal is-active" id="modal">
                 <div className="modal-background"></div>
                 <div className="modal-card">
                     <header className="modal-card-head">
                         <p className="modal-card-title">Report an Incident</p>
-                        <button className="delete" aria-label="close"></button>
+                        <button className="delete" aria-label="close" onClick={this.props.onClose}></button>
                     </header>
                     <section className="modal-card-body">
                         <div className="control has-icons-left has-icons-right">
