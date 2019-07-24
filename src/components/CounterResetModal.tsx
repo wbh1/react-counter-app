@@ -9,7 +9,7 @@ interface CounterResetProps {
 interface CounterResetState {
 }
 
-export class CounterReset extends React.Component<CounterResetProps, CounterResetState> {
+export class CounterResetModal extends React.Component<CounterResetProps, CounterResetState> {
     render() {
         // Render nothing if the "show" prop is false
         if (!this.props.show) {
